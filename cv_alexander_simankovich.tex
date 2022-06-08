@@ -288,7 +288,6 @@
 		\vspace{4pt}
 		{#5}
 	}
-	\vspace{4pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -302,7 +301,7 @@
 % param 4: info text (optional)
 \newcommand{\cvmetaevent}[4] {
 	\textcolor{maincol} {\cvtext{\textbf{\begin{flushleft}#1\end{flushleft}}}}
-
+	
 	\ifthenelse{\isempty{#2}}{}{
 	\textcolor{darkcol} {\cvtext{\textbf{#2}} }
 	}
@@ -368,6 +367,14 @@
 \icontext{MapMarker}{14}{Moscow, Russia}{black} \\
 \icontext{Home}{14}{Grodno, Belarus}{black} \\[6pt]
 \vfill\null
+
+%\vfill\null
+%\vfill\null
+%\vfill\null
+%\vfill\null
+%\vfill\null
+%\vfill\null
+
 %\cvqrcode{0.7}
 
 %---------------------------------------------------------------------------------------
@@ -394,7 +401,6 @@
 %
 %\cvskill{LaTeX} {} {0.4} \\[-2pt]
 
-\vfill\null
 %\cvqrcode{0.7}
 
 %---------------------------------------------------------------------------------------
@@ -418,8 +424,6 @@
 {1$^{\text{st}}$ degree diploma (2021)}
 {}
 
-\vfill\null
-
 \end{leftcolumn}
 \begin{rightcolumn}
 %---------------------------------------------------------------------------------------
@@ -437,54 +441,70 @@
 %---------------------------------------------------------------------------------------
 %	OBJECTIVE
 %----------------------------------------------------------------------------------------
-\vfill\null
+%\vfill\null
 \cvsection{OBJECTIVE}
 
-\cvtext{Inquisitive undergraduate of MIPT seeking for a position in development of reliable and efficient software. Eager to apply knowledge in practice, develop skills and communication through dedicated work on project improvements. }
+\cvtext{Curious undergraduate of MIPT seeking for a position in development of reliable and efficient software. Eager to apply knowledge in practice, develop skills and communication through dedicated work on project improvements. }
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\vfill\null
+%\vfill\null
 \cvsection{EDUCATION}
 
 \cvevent
 	{\textbf{2021 - 2025}}
 	{Bachelor of Applied Mathematics \& Physics}
 	{MIPT, DREC - Moscow, Russia}
-	{Average score: \textbf{9.6/10.0}.
-	\begin{itemize}
-		\item Analytic geometry and linear algebra --- \textit{finished}.
-		\item Probability theory --- \textit{finished}.
-		\item Mathematical analysis --- \textit{ongoing}.
-		\item General physics --- \textit{ongoing}.
-	\end{itemize}
-	}
+	{GPA: \textbf{9.6/10.0} \newline 
+	 GPA (Computer science): \textbf{10.0/10.0}}
+	{}
 \vfill\null
 %---------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
-\vfill\null
-\cvsection{ASSIGNMENTS}
+%\vfill\null
+\cvsection{MAIN PROJECTS}
 
 \cvevent
 	{\textbf{2021-2022}}
-	{Bellang}
-	{Tool: C, Make, Radare2, perf \newline Supervisor: Ilya Dedinskiy (ded@ded32.ru)}
-	{Compiler for custom 'Belarusian' language with cross-compilation and ELF x86-64 object files support.}
+	{\href{https://github.com/futherus/Language}{Bellang}}
+	{Tool: C, Make, Radare2, perf \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
+	{Compiler for custom 'Belarusian' language with cross-compilation, cross-translation and ELF x86-64 object files support.}
 \vfill\null
 
 \cvevent
 	{\textbf{2022}}
-	{Mandelbrot}
-	{Tool: C, Qt, SIMD \newline Supervisor: Ilya Dedinskiy (ded@ded32.ru)}
+	{\href{https://github.com/futherus/Hashtable}{Hashtable}}
+	{Tool: C, perf, SIMD, x86-64 assembly, Make, Python \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
+	{Hashtable implementation with performance tests and optimization.}
+\vfill\null
+
+\cvevent
+	{\textbf{2022}}
+	{\href{https://github.com/futherus/Mandelbrot}{Mandelbrot}}
+	{Tool: C, Qt, SIMD \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
 	{Mandelbrot set generator with AVX optimization.}
 \vfill\null
 
 \cvevent
+	{\textbf{2022}}
+	{\href{https://github.com/futherus/printf}{printf}}
+	{Tool: x86-64 Assembly, C, Make \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
+	{Simplified printf() implementation in assembly language.}
+\vfill\null
+
+\cvevent
+	{\textbf{2021}}
+	{\href{https://github.com/futherus/Differentiator}{Differentiator}}
+	{Tool: C, Make, LaTeX \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
+	{Tool for expression differentiation with twisted LaTeX output.}
+\vfill\null
+
+\cvevent
 {\textbf{2021}}
-	{Processor}
-	{Tool: C, Make \newline Supervisor: Ilya Dedinskiy (ded@ded32.ru)}
+	{\href{https://github.com/futherus/Processor}{Processor}}
+	{Tool: C, Make \newline Supervisor: Ilya Dedinskiy (\href{mailto:ded@ded32.ru}{ded@ded32.ru})}
 	{Virtual machine and assembler for custom assembly language.}
 \vfill\null
 
